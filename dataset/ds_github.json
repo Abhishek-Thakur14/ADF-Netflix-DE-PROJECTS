@@ -1,0 +1,31 @@
+{
+	"name": "ds_github",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "github_con",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "Abhishek-Thakur14/Projects-Tutorials-Resources-Output/refs/heads/main/Project%204%20Netflix%20Resource%20and%20Output/@{dataset().file_name}",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
