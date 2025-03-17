@@ -1,0 +1,9 @@
+{
+	"name": "adf-netflix-abhi",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0ff0ecac-784e-421b-b378-5950d76f83e9",
+		"tenantId": "05ac296b-2e61-48e0-bb0c-735bc62b323f"
+	}
+}
